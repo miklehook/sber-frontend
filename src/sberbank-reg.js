@@ -70,7 +70,7 @@ class App extends Component {
             </body>
         </div>
     );
-    
+    }
 }
 }
 
