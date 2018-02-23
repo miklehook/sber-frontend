@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './sberbank.css';
-import App from './sberbank-op';
+import MainPage from './sberbank-op';
+import SberReg from './sberbank-reg';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<MainPage />, document.getElementById('root'));
+ReactDOM.render(<SberReg />, document.getElementById('root1'));
 registerServiceWorker();

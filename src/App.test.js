@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './sberbank-op';
+import MainPage from './sberbank-op';
+import SberReg from './sberbank-reg';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  const sber_op = document.createElement('sber_op');
+  const sber_reg = document.createElement('sber_reg');
+  ReactDOM.render(<MainPage />, sber_op);
+  ReactDOM.render(<SberReg />, sber_reg);
+  ReactDOM.unmountComponentAtNode(sber_op);
+  ReactDOM.unmountComponentAtNode(sber_reg);
 });
